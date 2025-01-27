@@ -1,3 +1,57 @@
-# About
 
-This is the about page! This page is shown on the navbar.
+<h2 align="left">Hi 👋! I'm Arturo - Student of Systems Engineering</h2>
+
+
+
+## About Me
+
+
+```java
+package myProfile;
+
+import java.util.List;
+
+public final class Arturo extends Person {
+    private String education;
+    private List<String> interests;
+    private List<String> hobbies;
+    
+    public Arturo() {
+        super.name = "Arturo";
+        this.education = "Student of Systems Engineering";
+        this.interests = List.of(
+            "Game Development",
+            "Web Design",
+            "Backend Development",
+            "Learning New Technologies"
+        );
+
+        this.hobbies = List.of(
+            "Building Games",
+            "Learning",
+            "Cooking",
+            "Gym"
+        );
+    }
+
+    @Override
+    public String getName() {
+        return super.name;
+    }
+
+    public String getEducation() {
+        return education;
+    }
+
+    public List<String> getInterests() {
+        return interests;
+    }
+
+    public List<String> getHobbies() {
+        return hobbies;
+    }
+
+}
+
+
+```
