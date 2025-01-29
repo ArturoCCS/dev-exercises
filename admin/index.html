@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decap CMS</title>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  </head>
+  <body>
+    <script>
+      CMS.init({
+        config: {
+          backend: {
+            name: "github",
+            repo: "ArturoCCS/dev-exercises", // Nombre del repositorio en formato usuario/repositorio
+            branch: "main", 
+            base_url: "https://dev-exercises.vercel.app", // URL de tu sitio en Vercel
+            auth_endpoint: "api/auth", // Ruta para manejar la autenticación
+            app_id: "Ov23liYVIylKAMFrwhR7", // Client ID de GitHub
+            auth_scope: "repo" // O "public_repo" si el repositorio es público
+          },
+          media_folder: "public/images", // Carpeta para imágenes
+          public_folder: "/images",
+          collections: [
+            {
+              name: "pages",
+              label: "Pages",
+              folder: "pages", // Carpeta donde se guardan los archivos .mdx
+              create: true,
+              fields: [
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Body", name: "body", widget: "markdown" },
+              ],
+            },
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>
