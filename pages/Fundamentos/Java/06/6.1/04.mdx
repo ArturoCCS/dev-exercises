@@ -1,0 +1,36 @@
+
+### **Tipos de coma flotante o reales**
+
+Debe usar un tipo de real siempre que necesite un número con un decimal, como 9.99 o 3.14515.
+
+Los tipos de datos y pueden almacenar números fraccionarios. Tenga en cuenta que debe terminar el valor con una "f" para los flotantes y una "d" para los dobles:`float` y `double`
+
+Float
+
+```java
+float myNum = 5.75f;
+System.out.println(myNum);
+```
+
+Double
+
+```java
+double myNum = 19.99d;
+System.out.println(myNum);
+```
+
+Usar `float` o `double`?
+
+La **precisión** de un valor de coma flotante indica cuántos dígitos puede tener el valor después del separador decimal.`float` La precisión de es solo seis o siete dígitos decimales, mientras que `double` las variables tienen una precisión de unos 15 dígitos. Por lo tanto, es `double` más seguro de usar para la mayoría de los cálculos.
+
+
+#### **Números científicos**
+
+Un número de coma flotante también puede ser un número científico con una "e" para indicar la potencia de 10:
+
+```java
+float f1 = 35e3f;
+double d1 = 12E4d;
+System.out.println(f1);
+System.out.println(d1);
+```

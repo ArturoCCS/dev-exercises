@@ -1,49 +1,69 @@
-## **Comentarios en Java**
 
-Los comentarios se pueden utilizar para explicar el código Java y hacerlo más legible. También se puede utilizar para: Evite la ejecución al probar código alternativo.
+## **Salida**
 
-### **Comentarios de una sola línea**
-
-Los comentarios de una sola línea comienzan con dos barras diagonales ().`//`
-
-Cualquier texto entre y al final de la línea es ignorado por Java (no se ejecutará).`//`
-
-En este ejemplo se usa un comentario de una sola línea antes de una línea de código:
-
-**Ejemplo:**
-
-```java
-// Este es un comentario
-System.out.println("Hola Mundo");
-```
-
-En este ejemplo se usa un comentario de una sola línea al final de una línea de código:
-
-```java
-
-System.out.println("Hola Mundo");// Este es un comentario
-```
-
-### **Comentarios de varias líneas de Java**
-
-Los comentarios de varias líneas comienzan con .`/**/`
-
-Cualquier texto entre y será ignorado por Java.`/**/`
-
-En este ejemplo se usa un comentario de varias líneas (un bloque de comentarios) para explicar el código:
-
-**Ejemplo:**
-
-```java
-/* The code below will print the words Hello World
-to the screen, and it is amazing */
-System.out.println("Hello World");
-```
-
-💡 ¿Comentarios de una o varias líneas?
-
-Depende de ti cuál quieres usar. Normalmente, lo usamos para comentarios cortos y durante más tiempo.`///* */`
-
-
+- **Imprimir texto**
+    
+    Puede agregar tantos métodos como desee. Tenga en cuenta que agregará una nueva línea para cada método:`println()`
+    
+    **Ejemplo:**
+    
+    ```java
+    System.out.println("Hello World!");
+    System.out.println("I am learning Java.");
+    System.out.println("It is awesome!");
+    ```
+    
+    ### **Comillas dobles**
+    
+    Cuando se trabaja con texto, debe estar entre comillas dobles.`""`
+    
+    Si olvida las comillas dobles, se produce un error:
+    
+    **Ejemplo:**
+    
+    ```java
+    ✅ System.out.println("This sentence will work!");
+    ```
+    
+    ```java
+    ❌ System.out.println(This sentence will produce an error);
+    ```
+    
+    ### **El método print()**
+    
+    También hay un método, que es similar a .`print()println()`
+    
+    La única diferencia es que no inserta una nueva línea al final de la salida:
+    
+    **Ejemplo:**
+    
+    ```java
+    System.out.print("Hello World! ");
+    System.out.println("I will print on the same line.");
+    ```
+    
+- **Imprimir números**
+    
+    También puede utilizar el método para Imprime números.`println()`
+    
+    Sin embargo, a diferencia del texto, no ponemos números dentro de dobles presupuestos:
+    
+    **Ejemplos:**
+    
+    ```java
+    System.out.println(3);
+    System.out.println(358);
+    System.out.println(50000);
+    ```
+    
+    También puede realizar cálculos matemáticos dentro del método:`println()`
+    
+    ```java
+    System.out.println(3 + 3);
+    
+    System.out.println(2 * 5);
+    ```
+    
 
 ---
+

@@ -1,17 +1,93 @@
+## **Variables**
 
-## **Tipos de datos Java**
+Las variables son contenedores para almacenar valores de datos.
 
+En Java, existen diferentes **tipos** de variables, por ejemplo:
+
+- `String`
+    
+    - Almacena texto, como "Hola". Los valores de cadena son Rodeado de comillas dobles
+- `int`
+    
+    - Almacena números enteros (números enteros), sin decimales, como 123 o -123
+- `float`
+    
+    - Almacena números de coma flotante, con decimales, como 19,99 o -19,99
+- `char`
+    
+    - Almacena caracteres individuales, como 'a' o 'b'. Los valores de caracteres están entre comillas simples
+- `boolean`
+    
+    - Almacena valores con dos estados: Verdadero o falso
+
+**Declarar (crear) variables**
+
+Para crear una variable, debe especificar el tipo y asignarle un valor:
 
 ```java
-int myNum = 5;               // Integer (whole number)
-float myFloatNum = 5.99f;    // Floating point number
-char myLetter = 'D';         // Character
-boolean myBool = true;       // Boolean
-String myText = "Hello";     // String
-
+type variableName = value;
 ```
 
-Los tipos de datos se dividen en dos grupos:
+Donde _type_ es uno de los tipos de Java y _variableName_ es el nombre de la variable (como **x** o nombre). El **signo igual** se utiliza para asignar valores a la variable.`intString`
 
-- Tipos de datos primitivos:`byte`, `short`, `int`, `long`, `float`, `double`, `boolean`y `char`
-- Tipos de datos no primitivos, como, Matrices y Clases:`[String](<https://www.w3schools.com/java/java_strings.asp>)`
+Para crear una variable que almacene texto, observe el siguiente ejemplo:
+
+```java
+String nombre = "John";
+System.out.println(nombre);
+```
+
+También puede declarar una variable sin asignar el valor y asignar el valor más adelante:
+
+```java
+int numero;
+numero = 15;
+System.out.println(numero);
+```
+
+Tenga en cuenta que, si asigna un nuevo valor a una variable existente, sobrescribirá el valor anterior:
+
+```java
+int numero= 15;
+numero= 20;  // numero ahora es 20
+System.out.println(numero);
+```
+
+Si no quieres que otros (o tú mismo) sobrescriban los valores existentes, usa la palabra clave (esto declarará la variable como "final" o "constante", lo que significa inalterable y de solo lectura):`final`
+
+```java
+final int myNum = 15;
+myNum = 20;  // will generate an error: cannot assign a value to a final variable
+```
+
+
+
+## **Identificadores**
+
+Todas **las variables** Java deben **identificarse** con **nombres únicos**.
+
+Estos nombres únicos se denominan **identificadores**.
+
+Los identificadores pueden ser nombres cortos (como x e y) o nombres más descriptivos (edad, suma, volumen total).
+
+> **Nota:** Se recomienda utilizar nombres descriptivos para crear un código comprensible y mantenible:
+
+```java
+// Good
+int minutesPerHour = 60;
+
+// OK, but not so easy to understand whatm actually is
+int m = 60;
+```
+
+- Las reglas generales para nombrar variables son:
+    - Los nombres pueden contener letras, dígitos, guiones bajos y signos de dólar
+    - Los nombres deben comenzar con una letra
+    - Los nombres deben comenzar con una letra minúscula y no pueden contener espacios en blanco
+    - Los nombres también pueden comenzar con $ y _ (pero no lo usaremos en este tutorial)
+    - Los nombres distinguen entre mayúsculas y minúsculas ("myVar" y "myvar" son variables diferentes)
+    - Las palabras reservadas (como las palabras clave de Java, como o ) no se pueden usar como nombres`intboolean`
+
+---
+
+

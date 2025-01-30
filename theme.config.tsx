@@ -9,9 +9,9 @@ const config: DocsThemeConfig = {
     link: 'https://discord.com/users/{arttduur_91370}',
   },
   docsRepositoryBase: 'https://github.com/ArturoCCS/dev-exercises',
-  // footer: {
-  //   text: 'Nextra Docs Template',
-  // },
+  footer: {
+    text: 'En desarrollo',
+  },
 }
 
 export default config

@@ -4,8 +4,8 @@ import styles from "./IntroScreen.module.css";
 const IntroScreen: React.FC<{ onContinue: () => void }> = ({ onContinue }) => {
 
   const title = "Bienvenido";
-  const subtitle = "Mas texto";
-  const description = "Mas texto de descripción aquí";
+  const subtitle = "Texto de ejemplo";
+  const description = "La pagina sigue en desarrollo, preciona el boton para ir a la siguiente pagina";
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100vh" }}>

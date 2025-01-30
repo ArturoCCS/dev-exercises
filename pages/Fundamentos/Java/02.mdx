@@ -1,68 +1,35 @@
 
-## **Salida**
+## **Sintaxis de Java**
 
-- **Imprimir texto**
+### **El método principal**
+
+El método es obligatorio y usted verlo en todos los Java programa:`main()`
+
+**Ejemplo:**
+
+```java
+public static void main(String[] args)
+```
+
+### System.out.println()
+
+Dentro del método, podemos usar el método para imprimir una línea de texto en la pantalla:`main()println()`
+
+**Ejemplo:**
+
+```java
+public static void main(String[] args) {
+	System.out.println("Hello World");
+}
+```
+
+- **Nota :** Las llaves marcan el principio y el final de un bloque de código.`{}`
     
-    Puede agregar tantos métodos como desee. Tenga en cuenta que agregará una nueva línea para cada método:`println()`
+    `System` es una clase Java incorporada que contiene miembros útiles, como , que es la abreviatura de "salida". El método, abreviatura de "Imprimir línea", se utiliza para imprimir un valor en la pantalla (o un archivo).`outprintln()`
     
-    **Ejemplo:**
+    No te preocupes demasiado por , y . Solo debes saber que los necesitas juntos para imprimir cosas en la pantalla.`Systemoutprintln()`
     
-    ```java
-    System.out.println("Hello World!");
-    System.out.println("I am learning Java.");
-    System.out.println("It is awesome!");
-    ```
-    
-    ### **Comillas dobles**
-    
-    Cuando se trabaja con texto, debe estar entre comillas dobles.`""`
-    
-    Si olvida las comillas dobles, se produce un error:
-    
-    **Ejemplo:**
-    
-    ```java
-    ✅ System.out.println("This sentence will work!");
-    ```
-    
-    ```java
-    ❌ System.out.println(This sentence will produce an error);
-    ```
-    
-    ### **El método print()**
-    
-    También hay un método, que es similar a .`print()println()`
-    
-    La única diferencia es que no inserta una nueva línea al final de la salida:
-    
-    **Ejemplo:**
-    
-    ```java
-    System.out.print("Hello World! ");
-    System.out.println("I will print on the same line.");
-    ```
-    
-- **Imprimir números**
-    
-    También puede utilizar el método para Imprime números.`println()`
-    
-    Sin embargo, a diferencia del texto, no ponemos números dentro de dobles presupuestos:
-    
-    **Ejemplos:**
-    
-    ```java
-    System.out.println(3);
-    System.out.println(358);
-    System.out.println(50000);
-    ```
-    
-    También puede realizar cálculos matemáticos dentro del método:`println()`
-    
-    ```java
-    System.out.println(3 + 3);
-    
-    System.out.println(2 * 5);
-    ```
+    También debe tener en cuenta que cada instrucción de código debe terminar con un punto y coma ().`;`
     
 
 ---
