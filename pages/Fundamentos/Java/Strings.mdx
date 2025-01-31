@@ -1,0 +1,141 @@
+## Strings
+
+Las cadenas se utilizan para almacenar texto.
+
+Una variable `String` contiene una colección de caracteres entre comillas dobles:
+
+```java
+String greeting = "Hello";
+```
+
+### **Cadenas**
+
+### Longitud de la cadena
+
+Una cadena en Java es en realidad un objeto, que contiene métodos que pueden realizar ciertas operaciones en cadenas. Por ejemplo, la longitud de una cadena se puede encontrar con el método:`length()`
+
+```java
+String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+System.out.println("The length of the txt string is: " + txt.length());
+```
+
+### Más métodos de cadena
+
+Hay muchos métodos de cadena disponibles, por ejemplo `toUpperCase()` ****y `toLowerCase()`:
+
+```java
+String txt = "Hello World";
+System.out.println(txt.toUpperCase());   // Outputs "HELLO WORLD"
+System.out.println(txt.toLowerCase());   // Outputs "hello world"
+```
+
+### Búsqueda de un carácter en una cadena
+
+El método `indexOf()` devuelve el **índice** (la posición) de la primera aparición de un texto especificado en una cadena (incluidos los espacios en blanco):
+
+```java
+String txt = "Please locate where 'locate' occurs!";
+System.out.println(txt.indexOf("locate")); // Outputs 7
+```
+
+> Java cuenta las posiciones desde cero. 0 es la primera posición en un `String`, 1 es la segunda, 2 es la tercera...
+
+### **Referencia completa de cadenas**
+
+Para obtener una referencia completa de los métodos de cadena, vaya a nuestra [Referencia de métodos de cadena de Java](https://www.w3schools.com/java/java_ref_string.asp).
+
+La referencia contiene descripciones y ejemplos de todos los métodos de cadena.
+
+### **Concatenación**
+
+El operador `+` se puede usar entre cadenas para combinarlas. A esto se le llama **concatenación**:
+
+```java
+String firstName = "John";
+String lastName = "Doe";
+System.out.println(firstName + " " + lastName);
+```
+
+También puede usar el método `concat()` para concatenar dos cadenas:
+
+```java
+String firstName = "John ";
+String lastName = "Doe";
+System.out.println(firstName.concat(lastName))
+```
+
+### **Adición de números y cadenas**
+
+
+Si sumas dos números, el resultado será un número:
+
+```java
+int x = 10;
+int y = 20;
+int z = x + y;  // z will be 30 (an integer/number)
+```
+
+Si agrega dos cadenas, el resultado será una concatenación de cadenas:
+
+```java
+String x = "10";
+String y = "20";
+String z = x + y;  // z will be 1020 (a String)
+```
+
+Si agrega un número y una cadena, el resultado será una concatenación de cadenas:
+
+```java
+String x = "10";
+int y = 20;
+String z = x + y;  // z will be 1020 (a String)
+```
+
+### **Caracteres especiales**
+
+Debido a que las cadenas deben escribirse entre comillas, Java malinterpretará esta cadena, y generar un error:
+
+```java
+❌ String txt = "We are the so-called "Vikings" from the north.";
+```
+
+La solución para evitar este problema es utilizar el carácter de **escape de barra invertida**.
+
+El carácter de escape de barra diagonal inversa (`\\`) convierte los caracteres especiales en caracteres de cadena:
+
+| Escape character | Result      | Description  |
+| ---------------- | ----------- | ------------ |
+| \'               | '           | Single quote |
+| \"               | "           | Double quote |
+| \\               | \|Backslash |              |
+
+La secuencia `\\"` inserta una comilla doble en una cadena:
+
+```java
+✅ String txt = "We are the so-called \\"Vikings\\" from the north.";
+```
+
+La secuencia `\\'` inserta una comilla simple en una cadena:
+
+```java
+String txt = "It\\'s alright.";
+```
+
+La secuencia `\\\\` inserta una sola barra diagonal inversa en una cadena:
+
+```java
+String txt = "The character \\\\ is called backslash.";
+```
+
+Otras secuencias de escape comunes que son válidas en Java son:
+
+|Code|Result|
+|---|---|
+|\n|New Line|
+|\r|Carriage Return|
+|\t|Tab|
+|\b|Backspace|
+|\f|Form Feed|
+
+
+

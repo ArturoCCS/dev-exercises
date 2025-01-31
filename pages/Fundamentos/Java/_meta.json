@@ -1,9 +1,13 @@
 {
+
   "index": "¿Qué es Java?",
-  "02": "Sintaxis",
-  "03": "Salida",
-  "04": "Comentarios en Java",
-  "05": "Variables",
-  "06": "Tipo de datos",
-  "07": "Conversión de tipos"
+  "Sintaxis": "Sintaxis",
+  "Salida": "Salida",
+  "Comentarios_en_Java": "Comentarios en Java",
+  "Variables": "Variables",
+  "Tipo_de_datos": "Tipo de datos",
+  "Conversión_de_tipos": "Conversión de tipos",
+  "Operadores": "Operadores",
+  "Strings": "Strings"
+
 }
