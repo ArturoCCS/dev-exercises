@@ -10,7 +10,17 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/ArturoCCS/dev-exercises',
   footer: {
-    text: 'En desarrollo',
+    text: `En desarrollo - MIT ${new Date().getFullYear()} ©ArturoCCS`,
+  },
+  feedback: {
+    content: '¿Tienes preguntas o sugerencias? ¡Déjanos tu feedback!',
+    labels: 'sugerencia, pregunta',
+  },
+  toc: {
+    title: 'En esta página',
+  },
+  editLink: {
+    component:() => null,
   },
 }
 
