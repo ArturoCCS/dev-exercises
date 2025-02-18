@@ -1,6 +1,7 @@
 import { ThemeProvider } from "next-themes";
 import { useEffect, useState } from "react";
 import IntroScreen from "../components/IntroScreen";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   const [showIntro, setShowIntro] = useState(null);

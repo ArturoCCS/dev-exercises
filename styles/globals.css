@@ -1,0 +1,10 @@
+p{
+    text-align: justify;
+}
+
+.hola{
+    width: 150px;
+    height: auto;
+    margin-inline: auto;
+    margin-block: 50px;
+}
